@@ -13,8 +13,9 @@ impl Solution {
             let other = target - num;
             if let Some(&j) = map.get(&other) {
                 return vec![i as i32, j as i32];
+            } else {
+                map.insert(num, i);
             }
-            map.insert(num, i);
         }
         vec![]
     }
