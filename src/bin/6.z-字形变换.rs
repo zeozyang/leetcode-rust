@@ -14,7 +14,7 @@ impl Solution {
         let mut row: i32 = 0; // row表示当前行
         let mut flag: i32 = -1; // flag用来表示方向，只有-1和1两个值
         for a_char in s.chars() {
-            v[row as usize].push(a_char); // 用索引取值时，索引要用uszie表示。我在这里有个疑问，初始化字符串时，并没有给他标注mut，为什么它可以使用push()？
+            v[row as usize].push(a_char); // 用索引取值时，索引要用uszie表示。我在这里有个疑问，初始化字符串时，并没有给它标注mut，为什么它可以使用push()？
             if row == 0 || row == num_rows - 1 {
                 flag = -flag;
             }

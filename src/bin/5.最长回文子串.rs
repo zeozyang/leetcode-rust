@@ -6,6 +6,7 @@
 
 // @lc code=start
 use std::iter::FromIterator;
+
 impl Solution { // 中心扩散法
     pub fn longest_palindrome(s: String) -> String {
         let n = s.len();
