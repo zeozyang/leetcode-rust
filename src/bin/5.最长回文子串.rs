@@ -15,7 +15,7 @@ impl Solution { // 中心扩散法
         for i in 0..n {
             let mut l = i; // 扩散窗口的左边界
             let mut r = i; // 扩散窗口的右边界
-            while r + 1 < n && s[r + 1] == s[l] {
+            while r + 1 < n && s[r + 1] == s[l] { // 中心也可是两个相同的字符
                 r += 1;
             }
             while l > 0 && r < n - 1 && s[l - 1] == s[r + 1] {
