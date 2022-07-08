@@ -6,8 +6,7 @@
 
 // @lc code=start
 impl Solution {
-    pub fn letter_combinations(digits: String) -> Vec<String> {
-        
+    pub fn letter_combinations(digits: String) -> Vec<String> {   
     }
 }
 // @lc code=end
