@@ -33,7 +33,7 @@ impl Solution {
     }
 }
 
-pub fn carried(
+fn carried(
     l1: Option<Box<ListNode>>,
     l2: Option<Box<ListNode>>,
     mut carry: i32, // carry代表进位，其初始值只有0或1
