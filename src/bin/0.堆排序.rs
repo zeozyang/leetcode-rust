@@ -8,7 +8,7 @@ fn heap_sort(arr: &mut Vec<i32>) {
     if arr.is_empty() || arr.len() < 2 {
         return;
     }
-    for i in 0..arr.len() {
+    for i in 1..arr.len() {
         heap_insert(arr, i);
     }
 
@@ -23,7 +23,7 @@ fn heap_sort(arr: &mut Vec<i32>) {
 }
 
 fn heap_insert(arr: &mut Vec<i32>, mut index: usize) {
-    while arr[index] > arr[((index - 1) / 2)] {
+    while index != 0 && arr[index] > arr[(index - 1) / 2] {
         arr.swap((index - 1) / 2, index);
         index = (index - 1) / 2;
     }
