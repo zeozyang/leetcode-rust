@@ -3,6 +3,7 @@
  *
  * [445] 两数相加 II
  */
+use leetcode_rust::ListNode;
 
 // @lc code=start
 // Definition for singly-linked list.
@@ -21,7 +22,6 @@
 //     }
 //   }
 // }
-use leetcode_rust::ListNode;
 
 impl Solution {
     pub fn add_two_numbers(
